@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <!-- start load screen (general) -->
+    <div id="loadingScreen" class="w-100 vh-100 load">
+        <i class="fa-solid fa-spinner fa-spin fa-6x text-white spin1"></i>
+    </div>
+    <!-- end -->
+
+    <!-- start side nav -->
+    <aside class="position-fixed top-0  bottom-0 d-flex position-relative">
+        <div class="move bg-black d-flex flex-column justify-content-between">
+            <div class="nav">
+                <ul class="list-unstyled text-white ps-2">
+                    <li id="searchNav" class="li1">
+                        <span>Search</span>
+
+                    </li>
+                    <li id="categoriesNav" class="li2">
+                        <span>Categories</span>
+                    </li>
+                    <li id="areaNav" class="li3">
+                        <span>Area</span>
+                    </li>
+                    <li id="ingredientsNav" class="li4">
+                        <span>Ingredients</span>
+                    </li>
+                    <li id="contactNav" class="li5">
+                        <span>Contact Us</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="info position-absolute">
+                <div class="icons ps-2">
+                    <a href="#" class="d-inline-block">
+                        <i class="mx-2 fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="d-inline-block">
+                        <i class="mx-2 fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="d-inline-block">
+                        <i class="mx-2 fa-solid fa-globe"></i>
+                    </a>
+                </div>
+                <p class="my-3">Copyright Â© 2019 All Rights
+                    <br>
+                    Reserved.
+                </p>
+            </div>
+        </div>
+        <div class="fixed  p-2 text-center d-flex flex-column justify-content-between">
+            <div class="image my-3">
+                <img src="images/logo.png" alt="" width="42px">
+            </div>
+            <div class="toggle text-center" id="toggle">
+                <i class="fa-solid fa-bars text-black fs-4">
+                </i>
+            </div>
+            <div class="icons my-3">
+                <span class="d-block">
+                    <i class="fa-solid fa-globe"></i>
+                </span>
+                <span class="d-block">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </span>
+            </div>
+        </div>
+
+    </aside>
+    <!-- end side nav -->
+
+
+    <!-- start search -->
+    <div id="search" class="position-fixed top-0 start-0 end-0 py-2">
+        <div class="container w-75">
+            <div class="row" id="searchInputs">
+
+            </div>
+        </div>
+    </div>
+    <!-- end search -->
+
+
+    <!-- start content -->
+    <section id="meals" class="my-5 py-5">
+        <div class="load" class="w-100 vh-100 d-none" id="loadingScreen2">
+            <i class="fa-solid fa-spinner fa-spin fa-6x text-white spin2"></i>
+        </div>
+        <div class="container w-75 py-5">
+            <div class="row" id="rowMeals">
+                
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
